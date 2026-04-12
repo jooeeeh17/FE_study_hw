@@ -187,9 +187,14 @@ ul {
 
 /*여기부터 새로 만든 상세페이지 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
+.allbox {
+  width: 700px;
+}
+
+
 .top {
   border: 1px solid #dcdcdc;
-  width: 850px;
+  width: 100%;
   padding: 10px 20px;
 }
 
@@ -207,7 +212,8 @@ ul {
 .post-box {
   background-color: #fff;
   border: 1px solid #dcdcdc;
-  width: 850px;
+  width: 100%;
+  margin-top: 15px;
 }
 
 .post-inner {

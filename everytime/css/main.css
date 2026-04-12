@@ -82,6 +82,12 @@ ul {
   position: relative;
 }
 
+.low1-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .main-nav a.active {
   color: #d94a45;
 }
@@ -536,32 +542,26 @@ ul {
   color: #9a9a9a;
 }
 
-
 /*미디어쿼리*/
 
 .header-container {
   display: none;
 }
 
-
 @media screen and (max-width: 640px) {
-  .main-nav2
-  {
+  .main-nav2 {
     max-width: 640px;
   }
 
-
-  .site-header
-  {
+  .site-header {
     display: none;
   }
-  
+
   .secret-box {
     display: none;
   }
 
-  .header-container
-  {
+  .header-container {
     display: flex;
     align-items: center;
     padding: 15px;
@@ -581,16 +581,14 @@ ul {
     font-size: 20px;
   }
 
+  aside,
+  .side-menu {
+    display: none !important;
+  }
 
-  aside, .side-menu { 
-        display: none !important; 
-    }
-
-    nav {
-        width: 100%;
-        overflow-x: auto; 
-        white-space: nowrap; 
-    }
-
-
+  nav {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
 }
