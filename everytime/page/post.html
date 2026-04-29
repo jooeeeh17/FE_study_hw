@@ -1,10 +1,11 @@
+{% load static %}
 <!doctype html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>에타 글 작성페이지</title>
-    <link rel="stylesheet" href="../css/post.css" />
+    <link rel="stylesheet" href="{% static 'css/post.css'%}" />
   </head>
 
   <body>
@@ -32,11 +33,11 @@
         <div class="left-icon">
         <button type="button" class="icon">
           <img
-            src="../img/container.articles.write.hashtag.png"
+            src="{% static 'img/container.articles.write.hashtag.png' %}"
             alt="해시태그"
           /></button>
           <button type="button" class="icon">
-          <img src="../img/container.articles.write.attach.png" alt="첨부" /></button>
+          <img src="{% static 'img/container.articles.write.attach.png' %}" alt="첨부" /></button>
           </div>
         
 
@@ -52,12 +53,12 @@
             </label>
           </div>
           <button type="button" class="icon">
-          <img src="../img/redpencile.png" alt="작성 버튼" />
+          <img src="{% static 'img/redpencile.png' %}" alt="작성 버튼" />
           </button>
         </div>
       </footer>
     </div>
 
-    <script src="../js/post.js"></script>
+    <script src="{% static 'js/post.js'%}"></script>
   </body>
 </html>

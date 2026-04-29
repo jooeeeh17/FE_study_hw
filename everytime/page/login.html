@@ -1,30 +1,34 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>로그인 페이지</title>
-    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
   </head>
 
   <body>
     <div class="allbox">
       <div class="header">
-        <img src="../img/logo.png" />
+        <img src="{% static 'img/logo.png' %}" alt="로고" />
       </div>
-      <form class="formTag">
+      <form method='post' action={% url 'accounts:login' %} class="formTag">
+        {% csrf_token %}
         <div class="box">
           <div class="box1">
             <input
               type="text"
+              name="username"
               id="user-id"
               class="id-input"
               placeholder="LIKELION14"
             />
           </div>
           <div class="box2">
-            <input
+            <input 
               type="password"
+              name="password"
               id="user-password"
               class="password-input"
               placeholder="비밀번호"
@@ -36,7 +40,7 @@
             </button>
           </div>
         </div>
-        <p class="word">회원가입</p>
+        <a href="{% url 'accounts:signup' %}" class="word">회원가입</a>
       </form>
       <div class="word-box">
         <span class="word1">이용약관</span>
@@ -46,6 +50,6 @@
       </div>
     </div>
 
-    <script src="../js/login.js"></script>
+    <script src="{% static 'js/login.js' %}"></script>
   </body>
 </html>

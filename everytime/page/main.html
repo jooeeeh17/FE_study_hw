@@ -1,10 +1,11 @@
+{% load static %}
 <!doctype html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>덕성여대 에브리타임</title>
-    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
   </head>
 
   <body>
@@ -13,7 +14,7 @@
         <div class="header-inner">
           <h1 class="logo">
             <a href="#">
-              <img src="../img/nav.logo.png" alt="에브리타임 로고" />
+              <img src="{% static 'img/nav.logo.png' %}" alt="에브리타임 로고" />
               <span class="logo-text">
                 <small>에브리타임</small>
                 <strong>덕성여대</strong>
@@ -36,14 +37,14 @@
           <div class="header-icons">
             <a href="#" class="icon-btn" label="쪽지">
               <img
-                src="../img/icn_m_chat_gray800_light.png"
+                src="{% static 'img/icn_m_chat_gray800_light.png' %}"
                 alt="쪽지 아이콘"
               />
               <span class="badge">1</span>
             </a>
             <a href="#" class="icon-btn" label="내 정보">
               <img
-                src="../img/icn_m_account_gray800_light.png"
+                src="{% static 'img/icn_m_account_gray800_light.png' %}"
                 alt="내 정보 아이콘"
               />
             </a>
@@ -60,7 +61,7 @@
     
         <div class="header-container">
           <button type="button" class="mobile-only">
-            <img src="../img/aside.title.hamburger.png">
+            <img src="{% static 'img/aside.title.hamburger.png' %}">
           </button>
             <div class="board-title">비밀게시판</div>
         </div>
@@ -190,7 +191,7 @@
               <div class="row1">
                 <div class="img1">
                   <img
-                    src="../img/icn_mcr_board_question_light.png"
+                    src="{% static 'img/icn_mcr_board_question_light.png' %}"
                     alt="물음표사진"
                   />
                 </div>
@@ -207,14 +208,14 @@
               <div class="row2">
                 <div class="img2">
                   <img
-                    src="../img/icn_mcr_board_hotarticle_light.png"
+                    src="{% static 'img/icn_mcr_board_hotarticle_light.png' %}"
                     alt="불사진"
                   />
                 </div>
                 <div class="red-box">
                   놀고싶은건지 졸린건지
                   <img
-                    src="../img/container.articles.vote.red.png"
+                    src="{% static 'img/container.articles.vote.red.png' %}"
                     alt="붉은따봉"
                   />
                   <span style="color: red">252</span>
@@ -227,7 +228,7 @@
               <button id="writebtn">
                 <span>새 글을 작성해주세요!</span>
                 <img
-                  src="../img/container.write.background.gray.png"
+                  src="{% static 'img/container.write.background.gray.png' %}"
                   alt="회색펜"
                 />
               </button>
@@ -261,11 +262,11 @@
         <div class="left-icon">
         <button type="button" class="icon">
           <img
-            src="../img/container.articles.write.hashtag.png"
+            src="{% static 'img/container.articles.write.hashtag.png' %}"
             alt="해시태그"
           /></button>
           <button type="button" class="icon">
-          <img src="../img/container.articles.write.attach.png" alt="첨부" /></button>
+          <img src="{% static 'img/container.articles.write.attach.png' %}" alt="첨부" /></button>
           </div>
         
 
@@ -281,7 +282,7 @@
             </label>
           </div>
           <button type="button" class="icon">
-          <img src="../img/redpencile.png" alt="작성 버튼" />
+          <img src="{% static 'img/redpencile.png' %}" alt="작성 버튼" />
           </button>
         </div>
       </footer>
@@ -320,12 +321,12 @@
                   <p class="article3-2">
                     <img
                       class="thumb"
-                      src="../img/container.articles.vote.red.png"
+                      src="{% static 'img/container.articles.vote.red.png' %}"
                       alt="붉은따봉"
                     />
                     <span style="color: red">5</span> | 12분전 | 등대
                     <img
-                      src="../img/별표.png"
+                      src="{% static 'img/별표.png' %}"
                       style="width: 20px"
                       height="20px"
                     />
@@ -335,7 +336,7 @@
                 <div class="school">
                   <img
                     class="schoolimg"
-                    src="../img/망한시간표사진.png"
+                    src="{% static 'img/망한시간표사진.png' %}"
                     alt="망한시간표대회사진"
                   />
                 </div>
@@ -358,9 +359,9 @@
                 </p>
                 <p class="meta">
                   비밀게시판
-                  <img src="../img/container.articles.vote.red.png" />
+                  <img src="{% static 'img/container.articles.vote.red.png' %}" />
                   <span style="color: red">129</span>
-                  <img src="../img/container.articles.comment.png" />
+                  <img src="{% static 'img/container.articles.comment.png' %}" />
                   <span style="color: rgb(111, 178, 198)">0</span>
                 </p>
               </div>
@@ -372,9 +373,9 @@
                 </p>
                 <p class="meta">
                   비밀게시판
-                  <img src="../img/container.articles.vote.red.png" />
+                  <img src="{% static 'img/container.articles.vote.red.png' %}" />
                   <span style="color: red">40</span>
-                  <img src="../img/container.articles.comment.png" />
+                  <img src="{% static 'img/container.articles.comment.png' %}" />
                   <span style="color: rgb(111, 178, 198)">3</span>
                 </p>
               </div>
@@ -422,6 +423,6 @@
       </div>
     </div>
 
-    <script src="../js/main.js"></script>
+    <script src="{% static 'js/main.js' %}"></script>
   </body>
 </html>

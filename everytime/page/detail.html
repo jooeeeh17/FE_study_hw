@@ -1,10 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>에타 글 상세페이지</title>
-    <link rel="stylesheet" href="../css/detail.css">
+    <link rel="stylesheet" href="{% static 'css/detail.css'%}">
 </head>
 <body>
 <div class="all-background">
@@ -12,7 +13,7 @@
   <div class="header-inner">
     <h1 class="logo">
       <a href="#">
-        <img src="../img/nav.logo.png" alt="에브리타임 로고" />
+        <img src="{%static 'img/nav.logo.png' %}" alt="에브리타임 로고" />
         <span class="logo-text">
           <small>에브리타임</small>
           <strong>덕성여대</strong>
@@ -36,11 +37,11 @@
 
     <div class="header-icons">
       <a href="#" class="icon-btn" label="쪽지">
-        <img src="../img/icn_m_chat_gray800_light.png" alt="쪽지 아이콘" />
+        <img src="{% static 'img/icn_m_chat_gray800_light.png' %}" alt="쪽지 아이콘" />
         <span class="badge">1</span>
       </a>
       <a href="#" class="icon-btn" label="내 정보">
-        <img src="../img/icn_m_account_gray800_light.png" alt="내 정보 아이콘" />
+        <img src="{% static 'img/icn_m_account_gray800_light.png' %}" alt="내 정보 아이콘" />
       </a>
     </div>
   </div>
@@ -50,7 +51,7 @@
 
     <div class="header-container">
           <button type="button" class="mobile-only">
-            <img src="../img/aside.title.hamburger.png">
+            <img src="{% static 'img/aside.title.hamburger.png' %}">
           </button>
             <div class="board-title">비밀게시판</div>
         </div>
@@ -60,7 +61,7 @@
 <div class="main-nav2-box" style="width: 100%; height: auto; background-color: #f6f6f6; border-bottom: 1px solid #e5e5e5;">
 <nav class="main-nav2" label="게시판 종류">
 
-     <div class="column">
+    <div class="column">
     <ul>
       <li>자유게시판</li>
       <li class="active">비밀게시판</li>
@@ -157,7 +158,7 @@
             <div class="post-inner">
                 <div class="post-top">
                     <div class="writer-info">
-                        <img src="../img/anonymous.profile.png" alt="프로필 이미지">
+                        <img src="{% static 'img/anonymous.profile.png' %}" alt="프로필 이미지">
                         <div class="writer-text">
                             <span class="writer-name">익명</span>
                             <span class="writer-time">6분 전</span>
@@ -171,8 +172,8 @@
                 <div class="post-title">이 고양이 알면 고학번</div>
                 <div class="post-content">누군지 아는 사람</div>
                 <div class="image-list">
-                    <img src="../img/고양이사진1.png" alt="고양이 사진1">
-                    <img src="../img/고양이사진2.png" alt="고양이 사진2">
+                    <img src="{% static 'img/고양이사진1.png' %}" alt="고양이 사진1">
+                    <img src="{% static 'img/고양이사진2.png' %}" alt="고양이 사진2">
                 </div>
 
                 <!--!!!!!!!!!!!!!! js !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
@@ -182,21 +183,21 @@
                 <div class="reaction-count">
                   <div class="count-item">
                     <div class="like">
-                        <img src="../img/container.articles.vote.red.png" alt="따봉"> 
+                        <img src="{% static 'img/container.articles.vote.red.png' %}" alt="따봉"> 
                         <span id="likecount">1</span>
                     </div>
                   </div>
                 
                     
                     <div class="comment">
-                        <img src="../img/container.articles.comment.png" alt="댓글"> 
+                        <img src="{% static 'img/container.articles.comment.png' %}" alt="댓글"> 
                         <span>0</span>
                     </div>
                     
 
                     <div class="count-item">
                     <div class="scrap">
-                        <img src="../img/container.articles.scrap.png" alt="스크랩"> 
+                        <img src="{% static 'img/container.articles.scrap.png' %}" alt="스크랩"> 
                         <span id="scrapcount">0</span>
                     </div>
                     </div>
@@ -206,12 +207,12 @@
                 <div class="action-buttons1">
                   <!-- <div id="counter"> -->
                     <button type="button" id="likeBtn">
-                    <img src="../img/container.articles.buttons.posvote.png" alt="따봉이미지"/> 공감</button>
+                    <img src="{% static 'img/container.articles.buttons.posvote.png' %}" alt="따봉이미지"/> 공감</button>
                   <!-- </div> -->
                 </div>
                 <div class="action-buttons2">
                     <button type="button" id="scrapBtn">
-                        <img src="../img/container.articles.buttons.scrap.png" alt="스크랩이미지">
+                        <img src="{% static 'img/container.articles.buttons.scrap.png' %}" alt="스크랩이미지">
                         <span id="scrapText">스크랩</span>
                       </button>
                 </div>
@@ -227,7 +228,7 @@
     <div class="comment1">
     <div class="comment-header">
         <div class="user-info">
-            <img src="../img/anonymous.profile.png" class="profile-img">
+            <img src="{% static 'img/anonymous.profile.png' %}" class="profile-img">
             <span class="nickname">익명2</span>
         </div>
         <div class="comment-menu">
@@ -243,7 +244,7 @@
     <div class="comment1">
     <div class="comment-header">
         <div class="user-info">
-            <img src="../img/anonymous.profile.png" class="profile-img">
+            <img src="{% static 'img/anonymous.profile.png' %}" class="profile-img">
             <span class="nickname">익명3</span>
         </div>
         <div class="comment-menu">
@@ -260,7 +261,7 @@
 <div class="reply" id="reply-area" style="display: none;">
     <div class="comment-header">
         <div class="user-info">
-            <img src="../img/anonymous.profile.png" class="profile-img">
+            <img src="{% static 'img/anonymous.profile.png' %}" class="profile-img">
             <span class="nickname writer" style="color: mediumaquamarine;">익명(글쓴이)</span>
         </div>
         <div class="comment-menu">
@@ -288,7 +289,7 @@
 
             <div class="bottom-btn">
             <button type="button" class="list-btn">
-                <img src="../img/container.articles.pagination.list.png"> <span>글 목록</span>
+                <img src="{% static 'img/container.articles.pagination.list.png' %}"> <span>글 목록</span>
             </button> 
             </div>
                   
@@ -307,9 +308,9 @@
         <p style="color: #878686;">방금 1호선에서 나 서서 가고있는데 노량진에서 내 앞에 앉아있던 아리따운 여성분이 일어나면서
         핸드폰 화면 보여주</p>
         <p class="meta">비밀게시판
-          <img src="../img/container.articles.vote.red.png">
+          <img src="{% static 'img/container.articles.vote.red.png' %}">
           <span style="color: red;">129</span>
-          <img src="../img/container.articles.comment.png">
+          <img src="{% static 'img/container.articles.comment.png' %}">
           <span style="color: rgb(111, 178, 198);">0</span> 
         </p>
         </div>
@@ -319,9 +320,9 @@
           <h3>덕새 인형 달고 통학하는데</h3>
           <p>지하철에 앉으면 *가 너무 잘보여서 티나지 않게 손으로 가려줌</p>
           <p class="meta">비밀게시판
-          <img src="../img/container.articles.vote.red.png">
+          <img src="{% static 'img/container.articles.vote.red.png' %}">
           <span style="color: red;">40</span>
-          <img src="../img/container.articles.comment.png">
+          <img src="{% static 'img/container.articles.comment.png' %}">
           <span style="color: rgb(111, 178, 198);">3</span> 
           </p>
         </div>
@@ -363,6 +364,6 @@
 </div>
 
 
-<script src="../js/detail.js" defer></script>
+<script src="{% static 'js/detail.js' %}" defer></script>
 </body>
 </html>
